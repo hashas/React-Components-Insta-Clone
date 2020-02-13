@@ -8,6 +8,7 @@ const PostsPage = () => {
   return (
     <div className="posts-container-wrapper">
       {/* map through data here */}
+      
     </div>
   );
 };
