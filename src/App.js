@@ -11,6 +11,7 @@ import PostsPage from "./components/PostsContainer/PostsPage.js"
 import SearchBar from "./components/SearchBar/SearchBarContainer.js"
 // import dummydata
 import dummyData from "./dummy-data.js"
+// import PostHeader from "./components/PostsContainer/PostHeader";
 
 
 const App = () => {

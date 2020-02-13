@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const LikeSection = props => {
+
+  const [like, setLike] = useState(0);
+
   return (
     <div>
     <div
@@ -8,7 +11,7 @@ const LikeSection = props => {
       key="likes-icons-container"
     >
       <div className="like-section-wrapper">
-        <i className="far fa-heart" />
+        <i className="far fa-heart" onClick ={ () => setLike(like + 1)}/>
       </div>
       <div className="like-section-wrapper">
         <i className="far fa-comment" />
@@ -16,7 +19,7 @@ const LikeSection = props => {
     </div>
     <p className="like-number">
       
-      likes</p>
+    {props.likes + like}  likes</p>
 </div>
   )
 };
